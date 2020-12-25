@@ -4,12 +4,7 @@
 	box-sizing: border-box;
 }
 
-body{
-	background-color: hsl(185, 75%, 39%);
-	font-family: 'Kumbh Sans', sans-serif;
-	overflow: hidden;
-}
-
+/*##### BACKGROUND #####*/
 .pattern{
 	position: absolute;
 	z-index: -1;
@@ -23,18 +18,28 @@ body{
 	top: 40%;
 }
 
+/*##### CONTAINER #####*/
+body{
+	background-color: hsl(185, 75%, 39%);
+	font-family: 'Kumbh Sans', sans-serif;
+	height: 100vh;
+	position: relative;	
+	overflow: hidden;
+}
 .container{
 	width: 25%;
 	height: 380px;
 	min-width: 300px;
-	box-sizing: border-box;
+	box-sizing: border-box;  
+	/*overflow: hidden --  FROM BODY*/	
 	border-radius: 15px;
-	overflow: hidden;
 	text-align: center;
-	margin: 25vh auto;
-	line-height: 0;
-	position: relative;
+	position: absolute;
+	top: 50%; left: 50%;
+	transform: translate(-50%, -50%);
 }
+
+/*##### ##### CARD ##### #####*/
 .card-pattern{
 	width: 100%;
 	height: 40%;
@@ -63,6 +68,8 @@ table{
 td{
 	width: 33.3%
 }
+
+/*##### ##### TEXT ##### #####*/
 .count, .name{
 	font-weight: 700;
 	font-size: 18px;
@@ -72,11 +79,9 @@ td{
 	font-weight: 400;
 }
 hr{
-	border-top: 1px solid hsl(227, 10%, 46%);
+	border-top: 1px solid hsl(185, 75%, 39%);
 	border-bottom: 0px;
 }
 .stats{
 	font-size: 14px
 }
-
-
