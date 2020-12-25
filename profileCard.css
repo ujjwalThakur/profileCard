@@ -1,0 +1,82 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	background-color: hsl(185, 75%, 39%);
+	font-family: 'Kumbh Sans', sans-serif;
+	overflow: hidden;
+}
+
+.pattern{
+	position: absolute;
+	z-index: -1;
+}
+.top{
+	right: 50%;
+	bottom: 40%;
+}
+.bottom{
+	left: 50%;
+	top: 40%;
+}
+
+.container{
+	width: 25%;
+	height: 380px;
+	min-width: 300px;
+	box-sizing: border-box;
+	border-radius: 15px;
+	overflow: hidden;
+	text-align: center;
+	margin: 15vh auto;
+	line-height: 0;
+	position: relative;
+}
+.card-pattern{
+	width: 100%;
+	height: 40%;
+	object-fit: cover;
+}
+.whitespace{
+	height: 60%;
+	background-color: white;
+	line-height: 1.5;
+}
+.intro{
+	height: 60%;
+	padding-top:20%;
+}
+.photo{
+	border: solid 5px #fff;
+	border-radius: 50%;
+	position: absolute;
+	top: 25%;
+	left: calc((100% - 106px)/2);
+}
+table{
+	width: 100%;
+	padding: 5% 0;
+}
+td{
+	width: 33.3%
+}
+.count, .name{
+	font-weight: 700;
+	font-size: 18px;
+}
+.age, .place, .stats{
+	color: hsl(227, 10%, 46%);
+	font-weight: 400;
+}
+hr{
+	border-top: 1px solid hsl(227, 10%, 46%);
+	border-bottom: 0px;
+}
+.stats{
+	font-size: 12px
+}
+
+
